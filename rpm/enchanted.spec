@@ -41,7 +41,9 @@ Url:
 %setup -q -n %{name}-%{version}/upstream
 
 %install
-pushd Enchanted/stereo/
+install -D -m 644 %{themename}/index.theme %{buildroot}%{themedir}/index.theme
+install -D -m 644 %{themename}/stereo.index %{buildroot}%{themedir}/stereo.index
+pushd %{themename}/stereo/
 for f in *.ogg
 do
     install -D -m 644 $f %{buildroot}%{stereodir}/$f
@@ -53,11 +55,10 @@ popd
 %files
 %doc README.md
 %defattr(-,root,root,-)
-%dir % "%{_datadir}/sounds/%{themename}"
 %dir %{themedir}
-%{themedir}/index.theme
-%{themedir}/stereo.index
-%{stereodir}/*.ogg
+#%%{themedir}/index.theme
+#%%{themedir}/stereo.index
+#%%{stereodir}/*.ogg
 # less usable files shall not be packaged
 %exclude %{stereodir}/audio-volume-change.ogg
 %exclude %{stereodir}/button-pressed.ogg
