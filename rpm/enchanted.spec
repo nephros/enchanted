@@ -57,8 +57,9 @@ popd
 %doc README.md
 %defattr(-,root,root,-)
 %dir %{themedir}
-#%%{themedir}/index.theme
-#%%{themedir}/stereo.index
+%%{themedir}/index.theme
+%%{themedir}/stereo.index
+%dir %{stereodir}
 #%%{stereodir}/*.ogg
 # less usable files shall not be packaged
 %exclude %{stereodir}/audio-volume-change.ogg
