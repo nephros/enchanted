@@ -5,6 +5,7 @@ License:       Creative Commons Attribution ShareAlike
 Group:         Unspecified
 Summary:       Enchanted sound theme
 URL:           https://github.com/rtlewis88/rtl88-Themes/tree/Enchanted-Complete-System-Sounds
+Source:        %{name}-%{version}.tar.gz
 BuildArch:     noarch
 
 %define themename Enchanted
