@@ -33,7 +33,7 @@ Type: addon
 Categories:
   - Graphics
   - Settings
-Icon: https://raw.githubusercontent.com/rtlewis88/rtl88-Themes/Enchanted-Complete-System-Sounds/Pic.png
+Icon: https://raw.githubusercontent.com/nephros/enchanted/master/icons/enchanted_256.png
 Url:
   Homepage: https://store.kde.org/p/1332121
 %endif
