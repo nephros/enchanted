@@ -1,0 +1,4 @@
+[submodule "upstream"]
+	path = upstream
+	url = https://github.com/rtlewis88/rtl88-Themes
+	branch = Enchanted-Complete-System-Sounds
