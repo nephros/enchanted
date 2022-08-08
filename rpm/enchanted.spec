@@ -5,7 +5,8 @@ License:       Creative Commons Attribution ShareAlike
 Group:         Unspecified
 Summary:       Enchanted sound theme
 URL:           https://github.com/rtlewis88/rtl88-Themes/tree/Enchanted-Complete-System-Sounds
-Source:        %{name}-%{version}.tar.gz
+Source0:       %{name}-%{version}.tar.gz
+Source1:       stereo.index
 BuildArch:     noarch
 
 %define themename Enchanted
@@ -42,7 +43,7 @@ Url:
 
 %install
 install -D -m 644 %{themename}/index.theme %{buildroot}%{themedir}/index.theme
-install -D -m 644 %{themename}/stereo.index %{buildroot}%{themedir}/stereo.index
+install -D -m 644 %{SOURCE1} %{buildroot}%{themedir}/stereo.index
 pushd %{themename}/stereo/
 for f in *.ogg
 do
