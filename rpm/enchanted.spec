@@ -1,7 +1,8 @@
 Name:          enchanted-sound-theme
 Version:       1.1
 Release:       1
-License:       Creative Commons Attribution ShareAlike
+#         Creative Commons Attribution ShareAlike
+License:  CC-BY-SA
 Group:         Unspecified
 Summary:       Enchanted sound theme
 URL:           https://github.com/rtlewis88/rtl88-Themes/tree/Enchanted-Complete-System-Sounds
@@ -14,7 +15,9 @@ BuildArch:     noarch
 %define stereodir %{themedir}/stereo
 
 %description
-Set of tones compiled from the 'Enchanted' desktop sound theme by Randall Lewis (rtl88)
+Set of tones compiled from the 'Enchanted' desktop sound theme.
+
+Original theme by Randall Lewis (rtl88)
 
 Original description:
 
@@ -62,6 +65,7 @@ popd
 %dir %{stereodir}
 %{stereodir}/*.ogg
 # less usable files shall not be packaged
+# remember to update stereo.index when adding/removing files.
 %exclude %{stereodir}/audio-volume-change.ogg
 %exclude %{stereodir}/button-pressed.ogg
 %exclude %{stereodir}/button-released.ogg
